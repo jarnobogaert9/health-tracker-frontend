@@ -7,7 +7,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     weights: [],
-    showAddDialog: false
+    showAddDialog: false,
   },
   mutations: {
     setWeights(state, weights) {
@@ -18,7 +18,7 @@ export default new Vuex.Store({
     },
     closeAddDialog(state) {
       state.showAddDialog = false;
-    }
+    },
   },
   actions: {
     async fetchWeights({ commit }) {
@@ -45,8 +45,8 @@ export default new Vuex.Store({
           method: "POST",
           body: JSON.stringify(payload),
           headers: {
-            "Content-Type": "application/json"
-          }
+            "Content-Type": "application/json",
+          },
         });
         const json = await response.json();
         console.log(json);
@@ -62,7 +62,7 @@ export default new Vuex.Store({
       } catch (err) {
         throw new Error(err);
       }
-    }
+    },
   },
   modules: {},
 });
