@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import WeightProgress from "../views/WeightProgress.vue";
 
 Vue.use(VueRouter);
 
@@ -9,6 +10,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/weight-progress",
+    name: "WeightProgress",
+    component: WeightProgress,
   },
   {
     path: "/about",

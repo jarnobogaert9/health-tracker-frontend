@@ -45,9 +45,9 @@ export default {
     items: [
       { title: "Dashboard", icon: "mdi-view-dashboard", link: "/" },
       {
-        title: "Weight tracking",
+        title: "Weight progress",
         icon: "mdi-weight",
-        link: "/weight-tracking",
+        link: "/weight-progress",
       },
       { title: "Settings", icon: "mdi-cog", link: "/settings" },
     ],
