@@ -67,6 +67,7 @@ export default {
             ? new Date().toISOString()
             : new Date(date).toISOString(),
         });
+        this.$store.commit("closeAddDialog");
       } catch (err) {
         console.log(err);
       }
