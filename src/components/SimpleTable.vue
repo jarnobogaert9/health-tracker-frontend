@@ -29,6 +29,7 @@ export default {
   props: ["data"],
   // data() {},
   methods: {
+    // TODO Edit weight
     removeWeight(id) {
       console.log(id);
       this.$store.dispatch("removeWeight", id);
