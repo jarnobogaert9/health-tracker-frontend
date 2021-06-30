@@ -7,7 +7,6 @@
 
 <script>
 import SimpleTable from "../components/SimpleTable.vue";
-import { formatDate } from "../utils";
 export default {
   components: { SimpleTable },
   created() {
@@ -24,11 +23,7 @@ export default {
   },
   computed: {
     data() {
-      let weights = this.$store.state.weights;
-      weights.forEach((w) => {
-        w.date = formatDate(w.date);
-      });
-      return weights;
+      return this.$store.state.weights;
     },
   },
 };
